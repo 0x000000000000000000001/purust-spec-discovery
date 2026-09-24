@@ -818,6 +818,9 @@
       },
       "variant": {
         "path": "../purust-variant"
+      },
+      "yoga-json": {
+        "path": "../purust-yoga-json"
       }
     }
   },
@@ -1224,6 +1227,15 @@
         "prelude"
       ]
     },
+    "js-bigints": {
+      "type": "local",
+      "path": "../purust-js-bigints",
+      "dependencies": [
+        "integers",
+        "maybe",
+        "prelude"
+      ]
+    },
     "js-date": {
       "type": "local",
       "path": "../purust-js-date",
@@ -1591,6 +1603,15 @@
         "tuples"
       ]
     },
+    "record": {
+      "type": "local",
+      "path": "../purust-record",
+      "dependencies": [
+        "functions",
+        "prelude",
+        "unsafe-coerce"
+      ]
+    },
     "refs": {
       "type": "local",
       "path": "../purust-refs",
@@ -1652,6 +1673,7 @@
         "effect",
         "either",
         "foldable-traversable",
+        "foreign-object",
         "identity",
         "integers",
         "maybe",
@@ -1667,7 +1689,8 @@
         "prelude",
         "spec",
         "strings",
-        "tuples"
+        "tuples",
+        "yoga-json"
       ]
     },
     "st": {
@@ -1779,6 +1802,78 @@
       "type": "local",
       "path": "../purust-unsafe-coerce",
       "dependencies": []
+    },
+    "variant": {
+      "type": "local",
+      "path": "../purust-variant",
+      "dependencies": [
+        "assert",
+        "control",
+        "effect",
+        "either",
+        "enums",
+        "foldable-traversable",
+        "lists",
+        "maybe",
+        "partial",
+        "prelude",
+        "record",
+        "tuples",
+        "type-equality",
+        "unsafe-coerce"
+      ]
+    },
+    "yoga-json": {
+      "type": "local",
+      "path": "../purust-yoga-json",
+      "dependencies": [
+        "arrays",
+        "bifunctors",
+        "control",
+        "datetime",
+        "effect",
+        "either",
+        "exceptions",
+        "foldable-traversable",
+        "foreign",
+        "foreign-object",
+        "free",
+        "identity",
+        "integers",
+        "js-bigints",
+        "js-date",
+        "lists",
+        "maybe",
+        "newtype",
+        "nullable",
+        "numbers",
+        "ordered-collections",
+        "partial",
+        "prelude",
+        "record",
+        "safe-coerce",
+        "strings",
+        "transformers",
+        "tuples",
+        "typelevel-prelude",
+        "unsafe-coerce",
+        "variant",
+        "yoga-tree"
+      ]
+    },
+    "yoga-tree": {
+      "type": "registry",
+      "version": "1.0.0",
+      "integrity": "sha256-s8rIVEQkRi1VrMc92T9ceXcY0X6r5A4QqT6f7GgmDQI=",
+      "dependencies": [
+        "arrays",
+        "control",
+        "foldable-traversable",
+        "free",
+        "maybe",
+        "prelude",
+        "tailrec"
+      ]
     }
   }
 }
