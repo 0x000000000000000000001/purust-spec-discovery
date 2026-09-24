@@ -116,5 +116,7 @@ workspace:
       path: "../purust-js-date"
     js-bigints:
       path: "../purust-js-bigints"
+    yoga-json:
+      path: "../purust-yoga-json"
     strings-extra:
       path: "../purust-strings-extra"
